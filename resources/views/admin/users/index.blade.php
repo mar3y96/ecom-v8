@@ -50,7 +50,7 @@
                     <td> {{ $i++}} </td>
                     <td> <a href="{{ route('admin.users.show',$user->id) }}">{{ $user->f_name }}</a> </td>
                     <td>
-                        <a href="{{ route('admin.users.edit',['id'=>$user->id])}}" class="btn btn-circle blue"><i class="fa fa-edit"></i></a>
+                        <a href="{{ route('admin.users.edit',[$user->id])}}" class="btn btn-circle blue"><i class="fa fa-edit"></i></a>
                         {{ Form::open(['route'=>['admin.users.destroy',$user->id],'method'=>'delete','style'=>'display:inline'])}}
                         <button class="btn btn-circle red-mint" onclick="return confirm('متاكد من الحذف');"><i class="fa fa-times"></i></button>
                         {{ Form::close() }}
