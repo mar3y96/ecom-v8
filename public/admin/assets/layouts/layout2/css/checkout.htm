@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link media="all" type="text/css" rel="stylesheet" href="http://localhost:8000/site/css/bootstrap.min.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://localhost:8000/site/css/font-awesome.min.css">
+
+          <link media="all" type="text/css" rel="stylesheet" href="http://localhost:8000/site/css/main_rtl.css">
+
+      <style>
+        .Related-products{
+          text-align: right;
+        }
+      </style>
+        <style>
+      @import  url('https://fonts.googleapis.com/css?family=Cairo:300');
+      @import  url('https://fonts.googleapis.com/css?family=Amiri');
+      @import  url('https://fonts.googleapis.com/css?family=Changa:300');
+      body{
+        font-family: 'Cairo', sans-serif;
+        font-family: 'Amiri', serif;
+        font-family: 'Changa', sans-serif;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start Upper Bar -->
+    <div class="upper-bar">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md text-center">
+            <ul class="list-unstyled social">
+              <li style="margin-left: 0px;"><i class="fa fa-facebook"></i></li>
+              <li style="margin-left: 0px;"><i class="fa fa-twitter"></i></li>
+              <li style="margin-left: 0px;"><i class="fa fa-youtube"></i></li>
+              <li style="margin-left: 0px;"><i class="fa fa-instagram"></i></li>
+            </ul>
+          </div>
+          
+          <div class="col-md text-center">
+            <ul class="list-unstyled  float-left  ">
+                            <li><a href="http://localhost:8000/logout">خروج</a></li>
+              <li><a href="http://localhost:8000/profile">Mario</a></li>
+              
+                            <li><a href="http://localhost:8000/chef/login">الطباخ</a></li>
+              
+                            <li><a href="http://localhost:8000/delivery/login">المندوب</a></li>
+                          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End second Bar -->
+    <!-- start navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light second-bar">
+      <div class="container">
+        <a class="navbar-brand" href="http://localhost:8000">
+            <img src="http://localhost:8000/site/img/logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="search-bar text-right  mr-auto  ">
+            <input type="text" placeholder="بحث">
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="cart">
+            <i class="fa fa-cart-arrow-down"></i> 
+            <span> 4 item $440.00
+                            <div class="cart-design">
+                                <div class="cart-item">
+                  <img src="http://localhost:8000/site/img/avatar01.png">
+                  <p>الاسم</p>
+                  <br>
+                  <p>4 x $110</p>
+                  <span><a href="http://localhost:8000/cartRemove/8a48aa7c8e5202841ddaf767bb4d10da"><i class="fa fa-cart-plus"></i></a></span>
+                </div>
+                                <button><a href="http://localhost:8000/cart">عرض السلة</a></button>
+                <button><a href="http://localhost:8000/checkout"> اتمام الشراء</a></button>
+              </div>
+                          </span>
+          </div> 
+        </div>
+      </div>
+    </nav>
+
+    
+        <!-- start page-title -->
+    <div class="page-title">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Check Out</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  end page-title -->
+    <!-- start page content -->
+    <div class="checkout">
+      <div class="container">
+                  <div class="row">
+          <div class="col-md-6">
+            <h3>Billing Details</h3>
+              <form method="POST" action="http://localhost:8000/checkout" accept-charset="UTF-8" class="form-control"><input name="_token" type="hidden" value="jPv7rgrmnjOXpjPzDeBYc61KFeErquufDL2Gvuum">
+              <div class="row">
+                <div class="form-group col-md-6 ">
+                  <label >First Name <span>*</span></label>
+                  <input class="form-control" name="fname" type="text" value="Mario">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label>Last Name <span>*</span></label>
+                  <input class="form-control" name="lname" type="text">
+                  
+                </div>
+              </div>
+              <div class="form-group ">
+                <label>City<span>*</span></label>
+                <select class="form-control" name="city_id">
+                                          <option value="4">مكة</option>
+                                          <option value="5">الرياض</option>
+                                          <option value="6">جدة</option>
+                                    </select>
+              </div>
+              <div class="form-group">
+                <label>Street Address <span>*</span></label>
+                  <input class="form-control" name="address" type="text">
+              </div>
+              <div class="form-group">
+                <label>Phone <span>*</span></label>
+                  <input class="form-control" name="phone" type="text">
+              </div>
+              <div class="form-group">
+                <label>Additional Information </label>
+                  <textarea class="form-control" name="additional_info" cols="50" rows="10"></textarea>
+              </div>
+
+              <button class="btn btn-danger">Place Order</button>
+
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h3>Your Order (4) items</h3>
+            <table class="table">
+                            <tr>
+                <td>الاسم</td>
+                <td>$110</td>
+              </tr>
+                            <tr>
+                <td colspan="2">Total $440.00</td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end page content -->
+
+    <!-- start footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="site-info">
+              <img src="http://localhost:8000/site/img/logo.png">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="helpful-links">
+              <h2> روابط مفيدة </h2>
+              <div class="row">
+                <div class="col">
+                  <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Three</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-us">
+              <h2>تواصل معنا</h2>
+              <ul class="list-unstyled">
+                <li> <i class="fa fa-home"></i> : Cairo , Egypt , Mans </li>
+                <li>  <i class="fa fa-phone"></i> : +201092743452 </li>
+                <li> <i class="fa fa-folder-open"></i> : mahmed.95@gmail.com </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+
+    <!-- start copyright -->
+    <div class="copy-right">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>جميع الحقوق محفوظة هم اونلاين &copy; 2017 .</p>
+          </div>
+          <div class="col-sm-6">
+            <ul class="list-unstyled">
+              <li><img src="http://localhost:8000/site/img/pay/amex.jpg"></li>
+              <li><img src="http://localhost:8000/site/img/pay/maestro.jpg"></li>
+              <li><img src="http://localhost:8000/site/img/pay/paypal.jpg"></li>
+              <li><img src="http://localhost:8000/site/img/pay/visa.jpg"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end copyright -->
+    <script src="http://localhost:8000/site/js/jquery-3.2.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#side-bar-btn').click(function(){
+                $('#side-bar').toggleClass('active');
+            });
+        });
+    </script>
+    <script src="http://localhost:8000/site/js/popper.min.js"></script>
+
+    <script src="http://localhost:8000/site/js/bootstrap.min.js"></script>
+
+    <script src="http://localhost:8000/site/js/main.js"></script>
+
+
+      <link rel='stylesheet' type='text/css' property='stylesheet' href='//localhost:8000/_debugbar/assets/stylesheets?v=1500638208'><script type='text/javascript' src='//localhost:8000/_debugbar/assets/javascript?v=1500638208'></script><script type="text/javascript">jQuery.noConflict(true);</script>
+<script type="text/javascript">
+var phpdebugbar = new PhpDebugBar.DebugBar();
+phpdebugbar.addTab("messages", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Messages", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addIndicator("time", new PhpDebugBar.DebugBar.Indicator({"icon":"clock-o","tooltip":"Request Duration"}), "right");
+phpdebugbar.addTab("timeline", new PhpDebugBar.DebugBar.Tab({"icon":"tasks","title":"Timeline", "widget": new PhpDebugBar.Widgets.TimelineWidget()}));
+phpdebugbar.addIndicator("memory", new PhpDebugBar.DebugBar.Indicator({"icon":"cogs","tooltip":"Memory Usage"}), "right");
+phpdebugbar.addTab("exceptions", new PhpDebugBar.DebugBar.Tab({"icon":"bug","title":"Exceptions", "widget": new PhpDebugBar.Widgets.ExceptionsWidget()}));
+phpdebugbar.addTab("views", new PhpDebugBar.DebugBar.Tab({"icon":"leaf","title":"Views", "widget": new PhpDebugBar.Widgets.TemplatesWidget()}));
+phpdebugbar.addTab("route", new PhpDebugBar.DebugBar.Tab({"icon":"share","title":"Route", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addIndicator("currentroute", new PhpDebugBar.DebugBar.Indicator({"icon":"share","tooltip":"Route"}), "right");
+phpdebugbar.addTab("queries", new PhpDebugBar.DebugBar.Tab({"icon":"database","title":"Queries", "widget": new PhpDebugBar.Widgets.LaravelSQLQueriesWidget()}));
+phpdebugbar.addTab("emails", new PhpDebugBar.DebugBar.Tab({"icon":"inbox","title":"Mails", "widget": new PhpDebugBar.Widgets.MailsWidget()}));
+phpdebugbar.addTab("auth", new PhpDebugBar.DebugBar.Tab({"icon":"lock","title":"Auth", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addIndicator("auth.name", new PhpDebugBar.DebugBar.Indicator({"icon":"user","tooltip":"Auth status"}), "right");
+phpdebugbar.addTab("gate", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Gate", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addTab("session", new PhpDebugBar.DebugBar.Tab({"icon":"archive","title":"Session", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addTab("request", new PhpDebugBar.DebugBar.Tab({"icon":"tags","title":"Request", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.setDataMap({
+"messages": ["messages.messages", []],
+"messages:badge": ["messages.count", null],
+"time": ["time.duration_str", '0ms'],
+"timeline": ["time", {}],
+"memory": ["memory.peak_usage_str", '0B'],
+"exceptions": ["exceptions.exceptions", []],
+"exceptions:badge": ["exceptions.count", null],
+"views": ["views", []],
+"views:badge": ["views.nb_templates", 0],
+"route": ["route", {}],
+"currentroute": ["route.uri", ],
+"queries": ["queries", []],
+"queries:badge": ["queries.nb_statements", 0],
+"emails": ["swiftmailer_mails.mails", []],
+"emails:badge": ["swiftmailer_mails.count", null],
+"auth": ["auth.guards", {}],
+"auth.name": ["auth.names", ],
+"gate": ["gate.messages", []],
+"gate:badge": ["gate.count", null],
+"session": ["session", {}],
+"request": ["request", {}]
+});
+phpdebugbar.restoreState();
+phpdebugbar.ajaxHandler = new PhpDebugBar.AjaxHandler(phpdebugbar);
+phpdebugbar.ajaxHandler.bindToXHR();
+phpdebugbar.setOpenHandler(new PhpDebugBar.OpenHandler({"url":"http:\/\/localhost:8000\/_debugbar\/open"}));
+phpdebugbar.addDataSet({"__meta":{"id":"da384a9adbfe468487c528198351508f","datetime":"2017-11-12 21:16:41","utime":1510521401.014894,"method":"POST","uri":"\/login","ip":"::1"},"php":{"version":"7.2.0RC2","interface":"cli-server"},"messages":{"count":0,"messages":[]},"time":{"start":1510521400.834812,"end":1510521401.014912,"duration":0.1800999641418457,"duration_str":"180.1ms","measures":[{"label":"Booting","start":1510521400.834812,"relative_start":0,"end":1510521400.905332,"relative_end":1510521400.905332,"duration":0.07052016258239746,"duration_str":"70.52ms","params":[],"collector":null},{"label":"Application","start":1510521400.889415,"relative_start":0.05460309982299805,"end":1510521401.014914,"relative_end":2.1457672119140625e-6,"duration":0.12549901008605957,"duration_str":"125.5ms","params":[],"collector":null}]},"memory":{"peak_usage":10485760,"peak_usage_str":"10MB"},"exceptions":{"count":0,"exceptions":[]},"views":{"nb_templates":0,"templates":[]},"route":{"uri":"POST login","middleware":"web","controller":"App\\Http\\Controllers\\Auth\\AuthController@login","namespace":"App\\Http\\Controllers","prefix":null,"where":[],"file":"vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Auth\/AuthenticatesUsers.php:57-86"},"queries":{"nb_statements":1,"nb_failed_statements":0,"accumulated_duration":0.00079,"accumulated_duration_str":"790\u03bcs","statements":[{"sql":"select * from `users` where `email` = 'm.3laa.95@gmail.com' limit 1","type":"query","params":[],"bindings":["m.3laa.95@gmail.com"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"backtrace":[{"index":21,"namespace":"middleware","name":"guest","line":24},{"index":35,"namespace":null,"name":"\/app\/Http\/Middleware\/Locale.php","line":18},{"index":87,"namespace":null,"name":"\/public\/index.php","line":53}],"duration":0.00079,"duration_str":"790\u03bcs","stmt_id":"middleware::guest:24","connection":"hummonline"}]},"swiftmailer_mails":{"count":0,"mails":[]},"auth":{"guards":{"web":"array:2 [\n  \"name\" => \"m.3laa.95@gmail.com\"\n  \"user\" => array:6 [\n    \"id\" => 6\n    \"name\" => \"Mario\"\n    \"email\" => \"m.3laa.95@gmail.com\"\n    \"phone\" => \"\"\n    \"created_at\" => \"2017-11-12 21:11:39\"\n    \"updated_at\" => \"2017-11-12 21:16:33\"\n  ]\n]","admin":"array:2 [\n  \"name\" => \"m.3laa.95@gmail.com\"\n  \"user\" => array:7 [\n    \"id\" => 1\n    \"name\" => \"dev Mario\"\n    \"email\" => \"m.3laa.95@gmail.com\"\n    \"password\" => \"$2y$10$\/p4DA8V2U9wQr3A9ODKCpeyLo4uqvSoTJU8a19r1IO2D1wiRCVduW\"\n    \"created_at\" => null\n    \"updated_at\" => null\n    \"pic\" => null\n  ]\n]","chef":"array:2 [\n  \"name\" => \"Guest\"\n  \"user\" => array:1 [\n    \"guest\" => true\n  ]\n]","delivery":"array:2 [\n  \"name\" => \"Guest\"\n  \"user\" => array:1 [\n    \"guest\" => true\n  ]\n]","api":"array:2 [\n  \"name\" => \"Guest\"\n  \"user\" => array:1 [\n    \"guest\" => true\n  ]\n]"},"names":"web: m.3laa.95@gmail.com, admin: m.3laa.95@gmail.com"},"gate":{"count":0,"messages":[]},"session":{"_token":"jPv7rgrmnjOXpjPzDeBYc61KFeErquufDL2Gvuum","_previous":"array:1 [\n  \"url\" => \"http:\/\/localhost:8000\/login\"\n]","flash":"array:2 [\n  \"old\" => []\n  \"new\" => []\n]","cart":"array:1 [\n  \"default\" => Illuminate\\Support\\Collection {#557\n    #items: array:1 [\n      \"8a48aa7c8e5202841ddaf767bb4d10da\" => Gloudemans\\Shoppingcart\\CartItem {#558\n        +rowId: \"8a48aa7c8e5202841ddaf767bb4d10da\"\n        +id: 6\n        +qty: 4\n        +name: \"\u0627\u0644\u0627\u0633\u0645\"\n        +price: 110.0\n        +options: Gloudemans\\Shoppingcart\\CartItemOptions {#559\n          #items: []\n        }\n        -associatedModel: null\n        -taxRate: 0\n      }\n    ]\n  }\n]","url":"[]","lang":"ar","login_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d":"1","PHPDEBUGBAR_STACK_DATA":"[]","login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d":"6"},"request":{"format":"html","content_type":"text\/html; charset=UTF-8","status_text":"Found","status_code":"302","request_query":"[]","request_request":"array:3 [\n  \"_token\" => \"jPv7rgrmnjOXpjPzDeBYc61KFeErquufDL2Gvuum\"\n  \"email\" => \"m.3laa.95@gmail.com\"\n  \"password\" => \"123456\"\n]","request_headers":"array:13 [\n  \"host\" => array:1 [\n    0 => \"localhost:8000\"\n  ]\n  \"connection\" => array:1 [\n    0 => \"keep-alive\"\n  ]\n  \"content-length\" => array:1 [\n    0 => \"91\"\n  ]\n  \"cache-control\" => array:1 [\n    0 => \"max-age=0\"\n  ]\n  \"origin\" => array:1 [\n    0 => \"http:\/\/localhost:8000\"\n  ]\n  \"upgrade-insecure-requests\" => array:1 [\n    0 => \"1\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"application\/x-www-form-urlencoded\"\n  ]\n  \"user-agent\" => array:1 [\n    0 => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\"\n  ]\n  \"accept\" => array:1 [\n    0 => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8\"\n  ]\n  \"referer\" => array:1 [\n    0 => \"http:\/\/localhost:8000\/login\"\n  ]\n  \"accept-encoding\" => array:1 [\n    0 => \"gzip, deflate, br\"\n  ]\n  \"accept-language\" => array:1 [\n    0 => \"en-US,en;q=0.8,ar;q=0.6,af;q=0.4,tr;q=0.2\"\n  ]\n  \"cookie\" => array:1 [\n    0 => \"XSRF-TOKEN=eyJpdiI6Im5idUN1YTNyd2Vzem1XRU52UkNqM3c9PSIsInZhbHVlIjoiN0J0cWVWN1wvemQ1MUR0bFZuR0FEVDdjc2FQZHZHZ2gzU2hIV2N5VTBNeTBrSGJOTlR3OVNBazdmUVBPT3hUZllrZUJCcVpOK0tzRHg3dkxoM3JpK3dRPT0iLCJtYWMiOiIyNTgwZjE3ZjlhM2Y4Y2E5MmFiZjNhZTI4ODA0YmM2YzFjZTc1OWE2ZGUyOTQ1MWZmMjA3Njg0ZGE2ODQ4MDlkIn0%3D; laravel_session=eyJpdiI6IjJVNVVobzZkTjlXdmNxRFlWa2VjRkE9PSIsInZhbHVlIjoiTldNQjBkWFZ4UlBXekhvUGwrMkNJQ0tiR1c2OHlZdXRDYTJKMWhUcjBlUjV5bFZnellHck9UWFU5N0pUXC9RSFlpMVNpZWd5WXlJZkY0cUk0MHRrSVlBPT0iLCJtYWMiOiJhMzQ1NmY0N2Q0OWExNGE5ODc4YjY3MDRiMWZlNGM4YWFhM2JiNTE4Yzg5YzRhOWNjODNmZDc5MmI0MjE5ZGU3In0%3D\"\n  ]\n]","request_server":"array:30 [\n  \"DOCUMENT_ROOT\" => \"\/Users\/mario\/Desktop\/Sites\/hummonline\/public\"\n  \"REMOTE_ADDR\" => \"::1\"\n  \"REMOTE_PORT\" => \"60380\"\n  \"SERVER_SOFTWARE\" => \"PHP 7.2.0RC2 Development Server\"\n  \"SERVER_PROTOCOL\" => \"HTTP\/1.1\"\n  \"SERVER_NAME\" => \"localhost\"\n  \"SERVER_PORT\" => \"8000\"\n  \"REQUEST_URI\" => \"\/login\"\n  \"REQUEST_METHOD\" => \"POST\"\n  \"SCRIPT_NAME\" => \"\/index.php\"\n  \"SCRIPT_FILENAME\" => \"\/Users\/mario\/Desktop\/Sites\/hummonline\/public\/index.php\"\n  \"PATH_INFO\" => \"\/login\"\n  \"PHP_SELF\" => \"\/index.php\/login\"\n  \"HTTP_HOST\" => \"localhost:8000\"\n  \"HTTP_CONNECTION\" => \"keep-alive\"\n  \"CONTENT_LENGTH\" => \"91\"\n  \"HTTP_CONTENT_LENGTH\" => \"91\"\n  \"HTTP_CACHE_CONTROL\" => \"max-age=0\"\n  \"HTTP_ORIGIN\" => \"http:\/\/localhost:8000\"\n  \"HTTP_UPGRADE_INSECURE_REQUESTS\" => \"1\"\n  \"CONTENT_TYPE\" => \"application\/x-www-form-urlencoded\"\n  \"HTTP_CONTENT_TYPE\" => \"application\/x-www-form-urlencoded\"\n  \"HTTP_USER_AGENT\" => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\"\n  \"HTTP_ACCEPT\" => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8\"\n  \"HTTP_REFERER\" => \"http:\/\/localhost:8000\/login\"\n  \"HTTP_ACCEPT_ENCODING\" => \"gzip, deflate, br\"\n  \"HTTP_ACCEPT_LANGUAGE\" => \"en-US,en;q=0.8,ar;q=0.6,af;q=0.4,tr;q=0.2\"\n  \"HTTP_COOKIE\" => \"XSRF-TOKEN=eyJpdiI6Im5idUN1YTNyd2Vzem1XRU52UkNqM3c9PSIsInZhbHVlIjoiN0J0cWVWN1wvemQ1MUR0bFZuR0FEVDdjc2FQZHZHZ2gzU2hIV2N5VTBNeTBrSGJOTlR3OVNBazdmUVBPT3hUZllrZUJCcVpOK0tzRHg3dkxoM3JpK3dRPT0iLCJtYWMiOiIyNTgwZjE3ZjlhM2Y4Y2E5MmFiZjNhZTI4ODA0YmM2YzFjZTc1OWE2ZGUyOTQ1MWZmMjA3Njg0ZGE2ODQ4MDlkIn0%3D; laravel_session=eyJpdiI6IjJVNVVobzZkTjlXdmNxRFlWa2VjRkE9PSIsInZhbHVlIjoiTldNQjBkWFZ4UlBXekhvUGwrMkNJQ0tiR1c2OHlZdXRDYTJKMWhUcjBlUjV5bFZnellHck9UWFU5N0pUXC9RSFlpMVNpZWd5WXlJZkY0cUk0MHRrSVlBPT0iLCJtYWMiOiJhMzQ1NmY0N2Q0OWExNGE5ODc4YjY3MDRiMWZlNGM4YWFhM2JiNTE4Yzg5YzRhOWNjODNmZDc5MmI0MjE5ZGU3In0%3D\"\n  \"REQUEST_TIME_FLOAT\" => 1510521400.8348\n  \"REQUEST_TIME\" => 1510521400\n]","request_cookies":"array:2 [\n  \"XSRF-TOKEN\" => \"jPv7rgrmnjOXpjPzDeBYc61KFeErquufDL2Gvuum\"\n  \"laravel_session\" => \"bdcd63a31a1ead36be29f9576c16a09d120a96c2\"\n]","response_headers":"array:4 [\n  \"cache-control\" => array:1 [\n    0 => \"no-cache\"\n  ]\n  \"location\" => array:1 [\n    0 => \"http:\/\/localhost:8000\/checkout\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"text\/html; charset=UTF-8\"\n  ]\n  \"Set-Cookie\" => array:2 [\n    0 => \"XSRF-TOKEN=eyJpdiI6IjVDc1l6XC9zZ051NXVrdmdGZnpnTWVnPT0iLCJ2YWx1ZSI6IndjRXpmK2d2cG5ad0Zod2FtaDRyRFJhRjJ1Y0tVS3RENDIxSjhNSW4yTjF6cWRVWTZxd2NrWlJ5ckNqcmpta1wvY1Q2bXVoUTdFSER4K1ExcUlvUE5SQT09IiwibWFjIjoiODAxZmJiNmY5ZTk1YzdjZmQ1N2JiZTJmODRjMGU5MTdjOTk5YmYyOTYyYjIxY2UyYzRjNmM4ZGQ0N2NlMWEwMyJ9; expires=Sun, 12-Nov-2017 23:16:41 GMT; path=\/\"\n    1 => \"laravel_session=eyJpdiI6InIyVlI4K2lSa1lpU0N4VlhBUCt2T1E9PSIsInZhbHVlIjoidEt0eWZWbmhkaXlPRVdSTjNzcHJ1YUpsZXpcL2RPTjg4NWUySW9ZKzZ2empsbHB6MGlCVUtnYVVGbGlROEh2K2w1Q202VWlDK29FTk1UT3dOSTRVRHNnPT0iLCJtYWMiOiJhZDY3YmM0OGVjMDFkYzc5ZjA1NDdkNGQ5NzA5YjUzMmYyNmUyMTdlOGI4OWQ5YjY0ZDRlODQzYzM2NDc3MmRlIn0%3D; expires=Sun, 12-Nov-2017 23:16:41 GMT; path=\/; httponly\"\n  ]\n]","path_info":"\/login","session_attributes":"array:9 [\n  \"_token\" => \"jPv7rgrmnjOXpjPzDeBYc61KFeErquufDL2Gvuum\"\n  \"_previous\" => array:1 [\n    \"url\" => \"http:\/\/localhost:8000\/login\"\n  ]\n  \"flash\" => array:2 [\n    \"old\" => []\n    \"new\" => []\n  ]\n  \"cart\" => array:1 [\n    \"default\" => Illuminate\\Support\\Collection {#557\n      #items: array:1 [\n        \"8a48aa7c8e5202841ddaf767bb4d10da\" => Gloudemans\\Shoppingcart\\CartItem {#558\n          +rowId: \"8a48aa7c8e5202841ddaf767bb4d10da\"\n          +id: 6\n          +qty: 4\n          +name: \"\u0627\u0644\u0627\u0633\u0645\"\n          +price: 110.0\n          +options: Gloudemans\\Shoppingcart\\CartItemOptions {#559\n            #items: []\n          }\n          -associatedModel: null\n          -taxRate: 0\n        }\n      ]\n    }\n  ]\n  \"url\" => []\n  \"lang\" => \"ar\"\n  \"login_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d\" => 1\n  \"PHPDEBUGBAR_STACK_DATA\" => []\n  \"login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d\" => 6\n]"}}, "da384a9adbfe468487c528198351508f", "(stacked)");
+phpdebugbar.addDataSet({"__meta":{"id":"2cf9d052387eec137a88a7d6a5256bc8","datetime":"2017-11-12 21:16:41","utime":1510521401.123945,"method":"GET","uri":"\/checkout","ip":"::1"},"php":{"version":"7.2.0RC2","interface":"cli-server"},"messages":{"count":0,"messages":[]},"time":{"start":1510521401.025865,"end":1510521401.123969,"duration":0.09810400009155273,"duration_str":"98.1ms","measures":[{"label":"Booting","start":1510521401.025865,"relative_start":0,"end":1510521401.096964,"relative_end":1510521401.096964,"duration":0.07109880447387695,"duration_str":"71.1ms","params":[],"collector":null},{"label":"Application","start":1510521401.078464,"relative_start":0.05259895324707031,"end":1510521401.123971,"relative_end":1.9073486328125e-6,"duration":0.045506954193115234,"duration_str":"45.51ms","params":[],"collector":null}]},"memory":{"peak_usage":6291456,"peak_usage_str":"6MB"},"exceptions":{"count":0,"exceptions":[]},"views":{"nb_templates":3,"templates":[{"name":"user.cart.checkout (resources\/views\/user\/cart\/checkout.blade.php)","param_count":0,"params":[],"type":"blade"},{"name":"layouts.alert (resources\/views\/layouts\/alert.blade.php)","param_count":5,"params":["obLevel","__env","app","cities","errors"],"type":"blade"},{"name":"layouts.app (resources\/views\/layouts\/app.blade.php)","param_count":7,"params":["obLevel","__env","app","cities","errors","city","item"],"type":"blade"}]},"route":{"uri":"GET checkout","middleware":"web, auth","controller":"App\\Http\\Controllers\\User\\CartCtrl@checkoutView","namespace":"App\\Http\\Controllers","prefix":null,"where":[],"file":"app\/Http\/Controllers\/User\/CartCtrl.php:74-77"},"queries":{"nb_statements":1,"nb_failed_statements":0,"accumulated_duration":0.00073,"accumulated_duration_str":"730\u03bcs","statements":[{"sql":"select * from `users` where `users`.`id` = '6' limit 1","type":"query","params":[],"bindings":["6"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"backtrace":[{"index":17,"namespace":"middleware","name":"auth","line":20},{"index":22,"namespace":null,"name":"\/app\/Http\/Middleware\/Locale.php","line":18},{"index":74,"namespace":null,"name":"\/public\/index.php","line":53}],"duration":0.00073,"duration_str":"730\u03bcs","stmt_id":"middleware::auth:20","connection":"hummonline"}]},"swiftmailer_mails":{"count":0,"mails":[]},"auth":{"guards":{"web":"array:2 [\n  \"name\" => \"m.3laa.95@gmail.com\"\n  \"user\" => array:6 [\n    \"id\" => 6\n    \"name\" => \"Mario\"\n    \"email\" => \"m.3laa.95@gmail.com\"\n    \"phone\" => \"\"\n    \"created_at\" => \"2017-11-12 21:11:39\"\n    \"updated_at\" => \"2017-11-12 21:16:33\"\n  ]\n]","admin":"array:2 [\n  \"name\" => \"m.3laa.95@gmail.com\"\n  \"user\" => array:7 [\n    \"id\" => 1\n    \"name\" => \"dev Mario\"\n    \"email\" => \"m.3laa.95@gmail.com\"\n    \"password\" => \"$2y$10$\/p4DA8V2U9wQr3A9ODKCpeyLo4uqvSoTJU8a19r1IO2D1wiRCVduW\"\n    \"created_at\" => null\n    \"updated_at\" => null\n    \"pic\" => null\n  ]\n]","chef":"array:2 [\n  \"name\" => \"Guest\"\n  \"user\" => array:1 [\n    \"guest\" => true\n  ]\n]","delivery":"array:2 [\n  \"name\" => \"Guest\"\n  \"user\" => array:1 [\n    \"guest\" => true\n  ]\n]","api":"array:2 [\n  \"name\" => \"Guest\"\n  \"user\" => array:1 [\n    \"guest\" => true\n  ]\n]"},"names":"web: m.3laa.95@gmail.com, admin: m.3laa.95@gmail.com"},"gate":{"count":0,"messages":[]},"session":{"_token":"jPv7rgrmnjOXpjPzDeBYc61KFeErquufDL2Gvuum","_previous":"array:1 [\n  \"url\" => \"http:\/\/localhost:8000\/checkout\"\n]","flash":"array:2 [\n  \"old\" => []\n  \"new\" => []\n]","cart":"array:1 [\n  \"default\" => Illuminate\\Support\\Collection {#592\n    #items: array:1 [\n      \"8a48aa7c8e5202841ddaf767bb4d10da\" => Gloudemans\\Shoppingcart\\CartItem {#593\n        +rowId: \"8a48aa7c8e5202841ddaf767bb4d10da\"\n        +id: 6\n        +qty: 4\n        +name: \"\u0627\u0644\u0627\u0633\u0645\"\n        +price: 110.0\n        +options: Gloudemans\\Shoppingcart\\CartItemOptions {#594\n          #items: []\n        }\n        -associatedModel: null\n        -taxRate: 0\n      }\n    ]\n  }\n]","url":"[]","lang":"ar","login_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d":"1","login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d":"6"},"request":{"format":"html","content_type":"text\/html; charset=UTF-8","status_text":"OK","status_code":"200","request_query":"[]","request_request":"[]","request_headers":"array:10 [\n  \"host\" => array:1 [\n    0 => \"localhost:8000\"\n  ]\n  \"connection\" => array:1 [\n    0 => \"keep-alive\"\n  ]\n  \"cache-control\" => array:1 [\n    0 => \"max-age=0\"\n  ]\n  \"upgrade-insecure-requests\" => array:1 [\n    0 => \"1\"\n  ]\n  \"user-agent\" => array:1 [\n    0 => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\"\n  ]\n  \"accept\" => array:1 [\n    0 => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8\"\n  ]\n  \"referer\" => array:1 [\n    0 => \"http:\/\/localhost:8000\/login\"\n  ]\n  \"accept-encoding\" => array:1 [\n    0 => \"gzip, deflate, br\"\n  ]\n  \"accept-language\" => array:1 [\n    0 => \"en-US,en;q=0.8,ar;q=0.6,af;q=0.4,tr;q=0.2\"\n  ]\n  \"cookie\" => array:1 [\n    0 => \"XSRF-TOKEN=eyJpdiI6IjVDc1l6XC9zZ051NXVrdmdGZnpnTWVnPT0iLCJ2YWx1ZSI6IndjRXpmK2d2cG5ad0Zod2FtaDRyRFJhRjJ1Y0tVS3RENDIxSjhNSW4yTjF6cWRVWTZxd2NrWlJ5ckNqcmpta1wvY1Q2bXVoUTdFSER4K1ExcUlvUE5SQT09IiwibWFjIjoiODAxZmJiNmY5ZTk1YzdjZmQ1N2JiZTJmODRjMGU5MTdjOTk5YmYyOTYyYjIxY2UyYzRjNmM4ZGQ0N2NlMWEwMyJ9; laravel_session=eyJpdiI6InIyVlI4K2lSa1lpU0N4VlhBUCt2T1E9PSIsInZhbHVlIjoidEt0eWZWbmhkaXlPRVdSTjNzcHJ1YUpsZXpcL2RPTjg4NWUySW9ZKzZ2empsbHB6MGlCVUtnYVVGbGlROEh2K2w1Q202VWlDK29FTk1UT3dOSTRVRHNnPT0iLCJtYWMiOiJhZDY3YmM0OGVjMDFkYzc5ZjA1NDdkNGQ5NzA5YjUzMmYyNmUyMTdlOGI4OWQ5YjY0ZDRlODQzYzM2NDc3MmRlIn0%3D\"\n  ]\n]","request_server":"array:25 [\n  \"DOCUMENT_ROOT\" => \"\/Users\/mario\/Desktop\/Sites\/hummonline\/public\"\n  \"REMOTE_ADDR\" => \"::1\"\n  \"REMOTE_PORT\" => \"60382\"\n  \"SERVER_SOFTWARE\" => \"PHP 7.2.0RC2 Development Server\"\n  \"SERVER_PROTOCOL\" => \"HTTP\/1.1\"\n  \"SERVER_NAME\" => \"localhost\"\n  \"SERVER_PORT\" => \"8000\"\n  \"REQUEST_URI\" => \"\/checkout\"\n  \"REQUEST_METHOD\" => \"GET\"\n  \"SCRIPT_NAME\" => \"\/index.php\"\n  \"SCRIPT_FILENAME\" => \"\/Users\/mario\/Desktop\/Sites\/hummonline\/public\/index.php\"\n  \"PATH_INFO\" => \"\/checkout\"\n  \"PHP_SELF\" => \"\/index.php\/checkout\"\n  \"HTTP_HOST\" => \"localhost:8000\"\n  \"HTTP_CONNECTION\" => \"keep-alive\"\n  \"HTTP_CACHE_CONTROL\" => \"max-age=0\"\n  \"HTTP_UPGRADE_INSECURE_REQUESTS\" => \"1\"\n  \"HTTP_USER_AGENT\" => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\"\n  \"HTTP_ACCEPT\" => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8\"\n  \"HTTP_REFERER\" => \"http:\/\/localhost:8000\/login\"\n  \"HTTP_ACCEPT_ENCODING\" => \"gzip, deflate, br\"\n  \"HTTP_ACCEPT_LANGUAGE\" => \"en-US,en;q=0.8,ar;q=0.6,af;q=0.4,tr;q=0.2\"\n  \"HTTP_COOKIE\" => \"XSRF-TOKEN=eyJpdiI6IjVDc1l6XC9zZ051NXVrdmdGZnpnTWVnPT0iLCJ2YWx1ZSI6IndjRXpmK2d2cG5ad0Zod2FtaDRyRFJhRjJ1Y0tVS3RENDIxSjhNSW4yTjF6cWRVWTZxd2NrWlJ5ckNqcmpta1wvY1Q2bXVoUTdFSER4K1ExcUlvUE5SQT09IiwibWFjIjoiODAxZmJiNmY5ZTk1YzdjZmQ1N2JiZTJmODRjMGU5MTdjOTk5YmYyOTYyYjIxY2UyYzRjNmM4ZGQ0N2NlMWEwMyJ9; laravel_session=eyJpdiI6InIyVlI4K2lSa1lpU0N4VlhBUCt2T1E9PSIsInZhbHVlIjoidEt0eWZWbmhkaXlPRVdSTjNzcHJ1YUpsZXpcL2RPTjg4NWUySW9ZKzZ2empsbHB6MGlCVUtnYVVGbGlROEh2K2w1Q202VWlDK29FTk1UT3dOSTRVRHNnPT0iLCJtYWMiOiJhZDY3YmM0OGVjMDFkYzc5ZjA1NDdkNGQ5NzA5YjUzMmYyNmUyMTdlOGI4OWQ5YjY0ZDRlODQzYzM2NDc3MmRlIn0%3D\"\n  \"REQUEST_TIME_FLOAT\" => 1510521401.0259\n  \"REQUEST_TIME\" => 1510521401\n]","request_cookies":"array:2 [\n  \"XSRF-TOKEN\" => \"jPv7rgrmnjOXpjPzDeBYc61KFeErquufDL2Gvuum\"\n  \"laravel_session\" => \"f102a38b57521366fa02001eff5567cad29b2558\"\n]","response_headers":"array:3 [\n  \"cache-control\" => array:1 [\n    0 => \"no-cache\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"text\/html; charset=UTF-8\"\n  ]\n  \"Set-Cookie\" => array:2 [\n    0 => \"XSRF-TOKEN=eyJpdiI6InpXOEtGTjhSNkdPVmJzaWV3MnhHYWc9PSIsInZhbHVlIjoiRE8wMlRMazZzamlWRXpVMmg5a0pPcjBNMzk2Skd6UzlHOUpGWCt2cDdsWEJtZ2FhSjhBT0oweU9hUjd3d0RWbFpwMncxVGNoU3RrMXBhMzkxZE5FXC9BPT0iLCJtYWMiOiI2MTE2NGQwMzM3YjBkNzBhMWI3MzNjYzA0YWI2M2Q0MGVjMjhkMWFiYTE4YTg2NjJkNTI5OTExOWM5YTJkZWI2In0%3D; expires=Sun, 12-Nov-2017 23:16:41 GMT; path=\/\"\n    1 => \"laravel_session=eyJpdiI6InVuVmpueUNrb2xFaTlSNEpOSzJOZ0E9PSIsInZhbHVlIjoiSFwvMDJ5UlBGQjFub2xjU3JqRjlKS3BxVXBVelQzcStrQzFRc2RkZ1wvS3JNS2tKd3Jrejl2b3hwbmtcLzlHQWV1Mm5mVnBJTUg2VWtaOVwvMjd0TlI4Y0FRPT0iLCJtYWMiOiJkOTM3ZWI3YzNhYjk2MzdjMGU3OGVhZmU2NTNhZTc4ZDUwNWNlOWY5OWU5NTdmZDlhNTMxZTI3ZmFkYjBjZTAxIn0%3D; expires=Sun, 12-Nov-2017 23:16:41 GMT; path=\/; httponly\"\n  ]\n]","path_info":"\/checkout","session_attributes":"array:8 [\n  \"_token\" => \"jPv7rgrmnjOXpjPzDeBYc61KFeErquufDL2Gvuum\"\n  \"_previous\" => array:1 [\n    \"url\" => \"http:\/\/localhost:8000\/checkout\"\n  ]\n  \"flash\" => array:2 [\n    \"old\" => []\n    \"new\" => []\n  ]\n  \"cart\" => array:1 [\n    \"default\" => Illuminate\\Support\\Collection {#592\n      #items: array:1 [\n        \"8a48aa7c8e5202841ddaf767bb4d10da\" => Gloudemans\\Shoppingcart\\CartItem {#593\n          +rowId: \"8a48aa7c8e5202841ddaf767bb4d10da\"\n          +id: 6\n          +qty: 4\n          +name: \"\u0627\u0644\u0627\u0633\u0645\"\n          +price: 110.0\n          +options: Gloudemans\\Shoppingcart\\CartItemOptions {#594\n            #items: []\n          }\n          -associatedModel: null\n          -taxRate: 0\n        }\n      ]\n    }\n  ]\n  \"url\" => []\n  \"lang\" => \"ar\"\n  \"login_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d\" => 1\n  \"login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d\" => 6\n]"}}, "2cf9d052387eec137a88a7d6a5256bc8");
+
+</script>
+</body>
+</html>
